@@ -278,7 +278,8 @@
     opacity:1;
     -webkit-transition-property:opacity;
     -webkit-transition-duration:1.5s;
-	background-position:center;     
+    background-position:center;
+    background-image: url('../../images/loading.png');
 }
 
 #noVideo.hidden{
