@@ -3,7 +3,7 @@
 *.DS_Store
 ._*
 # Wakanda data
-*.waData
+# *.waData
 # Wakanda preferences
 *.waPreferences
 # Wakanda log
@@ -16,7 +16,7 @@ studio_log*
 # Wakanda index
 *.waIndex
 *.waIndx
-*.Match
+# *.Match
 # Wakanda User and Group cache
 *.cacheUAG
 # Wakanda breakpoints
