@@ -1,4 +1,4 @@
 videoDemo
 =========
 
-A showcase of the Wakanda 5 Video widget
+demonstrates the use of the new Video Widget of Wakanda v5

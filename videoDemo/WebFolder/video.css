@@ -1,0 +1,330 @@
+/* Reset stuff */
+.waf-theme.default .default.waf-slider .ui-slider-handle:before{
+    background:none;
+    border:none;
+    content: "";
+}
+
+.waf-theme.default .ui-slider-handle ui-state-default ui-corner-all{
+    border:none;
+}
+
+#toolbar_slider2{
+    height:3px !important;
+    background:none;
+    background-color:#333;
+    border:none;
+}
+
+/* Buttons */
+.waf-theme.default .waf-widget.waf-button, .default.waf-button.waf-state-disabled {
+    background:none;
+    border:none;
+    text-shadow:none;
+    box-shadow:none;    
+	cursor:pointer;
+    color:white;
+}
+
+.waf-theme.default .default.waf-button.waf-state-disabled{
+    cursor: default !important;
+    opacity:.4 !important;
+}
+
+.waf-theme.default .waf-widget.waf-button{
+    cursor: pointer;
+}
+
+.waf-theme.default .default.waf-button.waf-state-hover{
+ color:rgba(42,176,237,1);
+}
+
+.waf-theme.default .waf-container{
+    box-shadow:none;
+}
+
+/* Styling stuff */
+#waf-body{
+    background:none;
+	background-color:#023;
+	color: white;
+    background-size:100% 100%;
+    overflow:hidden;
+}
+
+#video1{
+	border:none;
+}
+
+#toolbar{
+/*    border-top: 2px solid rgba(42, 176, 237, .1);*/
+    background-color:rgb(10, 10, 10);
+/*    background: -moz-linear-gradient(left,  rgba(125,185,232,0) 0%, rgba(30,87,153,1) 100%);  FF3.6+ */
+/*    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(125,185,232,0)), color-stop(100%,rgba(30,87,153,1)));  Chrome,Safari4+ */
+/*    background: -webkit-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);  Chrome10+,Safari5.1+ */
+/*    background: -o-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);  Opera 11.10+ */
+/*    background: -ms-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);  IE10+ */
+/*    background: linear-gradient(to right,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%);  W3C */
+/*    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e5799',GradientType=1 );  IE6-9     */
+    z-index:999999999;
+    width:100%;
+}
+
+#toolbar button{
+    background-size:100% 100%;
+    opacity:.8;
+}
+
+#toolbar_totalTime{
+    color:#aaa !important;
+}
+
+.text{
+	position: inherit;
+	width: auto;
+    font-size:18px;
+}
+
+/* Slider */
+.waf-theme.default .waf-slider.ui-slider-horizontal .ui-slider-range, .waf-theme.default .default.waf-slider.ui-slider-horizontal .ui-slider-handle  {
+    background:none;
+    background-color:rgba(42,176,237,1);
+    border-radius:16px;
+    border:1px solid rgba(255, 255, 255, 0.29);
+    box-shadow:none;
+    height:18px;
+}
+
+#toolbar_progress{
+    background: -moz-linear-gradient(left,  rgba(125,185,232,0) 0%, rgba(30,87,153,1) 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(125,185,232,0)), color-stop(100%,rgba(30,87,153,1))); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%); /* IE10+ */
+    background: linear-gradient(to right,  rgba(125,185,232,0) 0%,rgba(30,87,153,1) 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 */
+    opacity:.8;
+    border:none;
+}
+
+#videoList{
+    /* should be set in designer */
+    position:absolute;
+    z-index:8;
+    height:102px;
+    background-color:black;
+    width:100%;
+    bottom:84px;
+    text-align:center;
+/*    overflow:hidden;*/
+    -webkit-transition-duration:.4s;
+    -webkit-transition-property: -webkit-transform, opacity;
+    -webkit-transform: translateY(84px);
+    opacity:0;
+}
+
+#videoList.visible{
+    opacity:1;
+    -webkit-transform:translateY(0);
+}
+
+#videoList a{
+/*    overflow:hidden;*/
+    position:relative;
+    color:white;
+    width:128px;
+    margin:0 20px;
+    display: inline-block;
+    box-shadow:none;
+    border:2px solid transparent;
+    -webkit-transition-property:-webkit-transform, box-shadow;
+    -webkit-transition-duration:.5s;
+    border-radius:3px;
+    box-shadow:8px 8px 18px rgba(42, 176, 237, .1), -8px -8px 18px rgba(42, 176, 237, .1);
+}
+
+#videoList a img{
+    width:100%;
+}
+
+#videoList a.active{
+    border:2px solid rgba(42, 176, 237, .9);
+}
+
+#videoList a .playing{
+    display:none;
+    position:absolute;
+    background: transparent url(./images/playing.png) center center no-repeat;
+    background-size:32px 32px;
+    width:100%;
+    height:100%;
+    z-index:10;
+}
+
+#videoList a.active .playing{
+    display:block;
+}
+
+#videoList a span{
+    color:black;
+/*
+    text-align:left;
+    font-size:14px;
+    display:block;
+    position:absolute;
+    padding:8px 12px;
+    left:0;
+    right:0;
+    top:-100%;
+    height:30%;
+    background-color:rgba(0,0,0,.8);
+    color:white;
+    white-space:normal;
+    word-wrap:break-word;
+*/
+    opacity:0;
+    -webkit-transition-property:top, opacity;
+    -webkit-transition-duration:.4s;
+}
+
+#videoList a:hover span{
+    opacity: 1;
+}
+
+#videoList .canPlay{
+    opacity:.9;
+    width:38px;
+    height:35px;
+    position:absolute;
+    left:2px;
+    bottom:2px;
+    position:absolute;
+    z-index:1;
+    background: transparent url(./images/canPlay.png) center center no-repeat;
+}
+
+/** ToolType **/
+.tooltip {
+  position: relative;
+/*
+  background: #eaeaea;
+  cursor: help;
+  display: inline-block;
+  text-decoration: none;
+  color: #222;
+*/
+  outline: none;
+}
+
+.tooltip span {
+/*  display:none;*/
+  position: absolute; 
+  bottom: 110%;
+  left: 50%;
+  z-index: 99999;
+  width: 230px;
+  margin-left: -127px;
+  padding: 10px;
+  border: 2px solid #ccc;
+  opacity: .9;
+  background-color: #ddd;                     
+  background-image: -webkit-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -moz-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -ms-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: -o-linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));
+  background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,0));  
+  -moz-border-radius: 4px;
+  border-radius: 4px;  
+  -moz-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4), 0 1px 0 rgba(255,255,255,.5) inset;  
+  text-shadow: 0 1px 0 rgba(255,255,255,.4); 
+}
+
+.tooltip{
+    z-index:9;
+}
+
+.tooltip:hover {
+  border: 0; /* IE6 fix */
+  z-index:10;
+}
+
+.tooltip:hover span {
+  visibility: visible;
+    display:block;
+}
+
+.tooltip span:before,
+.tooltip span:after {
+  content: "";
+  position: absolute;
+  z-index: 1000;
+  bottom: -7px;
+  left: 50%;
+  margin-left: -8px;  
+  border-top: 8px solid #ddd;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;        
+  border-bottom: 0;  
+}
+
+.tooltip span:before {
+  border-top-color: #ccc;
+  bottom: -8px;
+}
+
+#noVideo{
+    opacity:1;
+    -webkit-transition-property:opacity;
+    -webkit-transition-duration:1.5s;
+}
+
+#noVideo.hidden{
+    opacity:0;
+}
+
+.overlayInfo{
+    width:128px;
+    height:128px;
+    position:absolute;
+    z-index:7;
+    
+    left:50%;
+    top:50%;
+    margin-left:-64px;
+    margin-top:-64px;
+    
+    opacity:0;
+    
+    pointer-events:none;
+    
+    background:transparent url(./images/pause.png) no-repeat center center;
+}
+
+.overlayInfo.pause{
+    background-image:url(./images/pause.png);
+}
+
+.overlayInfo.play{
+    background-image:url(./images/play.png);
+}
+
+.overlayInfo.next{
+    background-image:url(./images/next.png);
+}
+
+.overlayInfo.prev{
+    background-image:url(./images/prev.png);
+}
+
+@-webkit-keyframes showOverlay /* Safari and Chrome */
+{
+    0%   {opacity: 0;-webkit-transform:scale(1.0);z-index:10;}
+    50%  {opacity: 1;-webkit-transform:scale(2.0);z-index:10;}
+    100%  {opacity: 0;-webkit-transform:scale(3.0);z-index:10;}
+}
+
+.overlayInfo.visible{
+    -webkit-animation:showOverlay .5s linear;
+}
